@@ -145,6 +145,10 @@ header nav li {
   font-size: large;
   transition: .5s;
 }
+.arrows button:hover{
+  background-color: #eee;
+  color: #555;
+}
 
   /* .carousel{
     width: 100%;
