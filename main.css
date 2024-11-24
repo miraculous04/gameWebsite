@@ -197,8 +197,8 @@ header nav li {
     position: absolute;
     left: 50%;
     bottom: 50px;
-    border-radius: 0;
-    animation: showImage 0.5s 1s linear 1 forwards;
+    border-radius: 20px;
+    animation: showImage 0.5s linear 1 forwards;
   }
   @keyframes showImage{
     to{
@@ -209,6 +209,27 @@ header nav li {
       bottom-radius: 0;
     }
   }
+  .carousel.next .list .item:nth-child(1){
+    width: 0;
+    overflow: hidden;
+    animation: showThumbnail 0.5s linear 1 forwards;
+  }
+  @keyframes showThumbnail{
+    to{
+      width: 150px;
+    }
+  }
+  .carousel.next .thumbnail{
+    transform: translateX(150px);
+    animation: transformThumbnail 0.5s linear 1 forwards;
+  }
+  @keyframes transformThumbnail{
+    to{
+      transform: translateX(0);
+    }
+  }
+ 
+
 
   /* Main Styles */
   
