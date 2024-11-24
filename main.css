@@ -209,7 +209,7 @@ header nav li {
       bottom-radius: 0;
     }
   }
-  .carousel.next .list .item:nth-child(1){
+  .carousel.next .list .item:nth-last-child(1){
     width: 0;
     overflow: hidden;
     animation: showThumbnail 0.5s linear 1 forwards;
